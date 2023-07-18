@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Stopwatch Using JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stopwatch">
+      <h1 id="displayTime">00:00:00</h1>
+      <div class="buttons">
+        <img
+          onclick="watchStop()"
+          src="images/stop.png"
+          loading="lazy"
+          alt="stop"
+        />
+        <img
+          onclick="startWatch()"
+          src="images/start.png"
+          loading="lazy"
+          alt="start"
+        />
+        <img
+          onclick="watchRest()"
+          src="images/reset.png"
+          loading="lazy"
+          alt="reset"
+        />
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
